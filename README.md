@@ -1,12 +1,32 @@
-# Rails Template
+# Modern Realty
+## This is the functional specification for the Modern Realty website.
 
-This is a base Ruby on Rails repository configured for learning with Codespaces (and Gitpod).
+### Upon talking to John all I was told was that.
+1. It must contain their photos, mock up will not have those.
+2. Pricing should not be easily found, must click around to find. 
+3. Booking link can be added.
 
+### Pain points
+- I want to be able to show off my business, showing my work, pricing, and the ability to contact me. 
+
+### I do not have a domain model for this.
+- Will not have any complex logic. 
+
+### These are the mock ups that I have come up with.
+!(https://imgur.com/a/nOia5dT)
+This is the one John liked.
+
+### User stories
+- I am a realtor looking for examples of what they do
+- I am a realtor and I would like to see pricing.
+- I am a realtor. I have a question about a special work, how can I contact them.
+- I am a business owner, I would like the pricing to be hidden.
+- I am a business owner, I would like the display to be clean
+- I am a business owner, I would like the main audience to be realtor but not limited to 
+
+### Ruby specifics
 - Ruby version: `3.2.1`
 - Rails version: `7.0.4.3`
-
-
-We've added additional Ruby gems and other software that aren't automatically available in a new Rails app.
 
 ### Additional gems:
 
