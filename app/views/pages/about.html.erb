@@ -1,0 +1,23 @@
+<h1 class="text-center mb-4">About us</h1>
+<div class="img d-flex justify-content-center mb-4">
+  <%= image_tag('logo_grey.png', alt: 'Logo', width: '300px') %>
+</div>
+  <p class='text-center px-3'>Founded with a passion for excellence, this Latino-owned company emerged in Berwyn, IL, determined to turn their vision into a thriving business. Fueled by a commitment to quality and customer satisfaction, the company has grown to embody the values of dedication, community, and a relentless pursuit of success. From its humble beginnings, the business stands today as a testament to the entrepreneurial spirit, demonstrating the power of passion and determination in creating a lasting impact.</p>
+<h2 class="text-center mt-3">Contact us</h2>
+<div class="d-flex justify-content-around align-items-center text-center">
+  <div> 
+    <%= link_to 'https://www.facebook.com/modernrealtystudio', target: '_blank' do %>
+      <%= image_tag('fb_logo.png', alt: 'Facebook Logo', width: '100px') %>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to 'https://www.instagram.com/modernrealtystudio/', target: '_blank' do %>
+      <%= image_tag('ig_logo.avif', alt: 'Instagram Logo', width: '100px') %>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to 'https://vimeo.com/user115397272', target: '_blank' do %>
+      <%= image_tag('vimeo_logo.png', alt: 'Vimeo Logo', width: '100px') %>
+    <% end %>
+  </div>
+</div>
