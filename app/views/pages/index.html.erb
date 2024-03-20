@@ -1,14 +1,76 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Pages</h1>
-
-<div id="pages">
-  <% @pages.each do |page| %>
-    <%= render page %>
-    <p>
-      <%= link_to "Show this page", page %>
-    </p>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="text-section">
+        <h1>Modern Realty Studio</h1>
+        <p>Welcome to Modern Realty Studio, your trusted partner for exceptional real estate photography in the Chicagoland area. We are dedicated to providing clean and professional media that showcases your property in the best light possible.</p>
+        <%= link_to('/about', class: 'btn btn-secondary') do %>
+          Book us
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="img">
+        <%= image_tag('house/house.jpeg', alt: 'House', class: 'img-fluid') %>
+      </div>
+    </div>
+  </div>
 </div>
 
-<%= link_to "New page", new_page_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mid-text">
+      <h2>Our skilled photographers capture the essence of each listing, highlighting unique features.</h2>
+      <h3>We bring your vision into a reality.</h3>
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide container">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag('kitchen/kitchen.jpeg', alt: 'Kitchen', class: 'd-block mx-auto img-fluid') %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('livingroom/livingroom.jpeg', alt: 'Landscape', class: 'd-block mx-auto img-fluid') %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag('landscape/landscape.jpeg', alt: 'Landscape', class: 'd-block mx-auto img-fluid') %>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img">
+        <%= image_tag('house/house6.jpeg', alt: 'House', class: 'img-fluid') %>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-section">
+        <h2>Elevate your listings.</h2>
+        <p>With a commitment to excellence, we deliver high quality photos that make lasting impressions on potential buyers.</p>
+        <%= link_to('/work', class: 'btn btn-secondary') do %>
+          Learn more
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!---->
+  <%#= link_to "New page", new_page_path %>
