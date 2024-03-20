@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: %i[ show edit update destroy ]
-
+before_action :set_page, only: %i[ show edit update destroy ]
+  
   # GET /pages or /pages.json
   def index
     @pages = Page.all
@@ -17,6 +17,19 @@ class PagesController < ApplicationController
 
   # GET /pages/1/edit
   def edit
+  end
+
+  def packages
+    @video_url = "https://www.youtube.com/embed/cXqv7bQbQTE"
+  end
+
+  def about
+  end
+  
+  def work
+    @video_url = "https://www.youtube.com/embed/AbBMXozT8Y0"
+    @secondvideo_url = "https://www.youtube.com/embed/C55_8-dorhY"
+    @thirdvideo_url = "https://www.youtube.com/embed/9U8HrLPAuZw"
   end
 
   # POST /pages or /pages.json
